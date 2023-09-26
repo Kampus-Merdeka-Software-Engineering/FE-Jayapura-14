@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToeflLab | Structure</title>
+    <title>ToeflLab | Test Simulation</title>
 
     <!--custom css file link-->
-    <link rel="stylesheet" href="style/quiz.css">
+    <link rel="stylesheet" href="style/test.css">
 
     <!--font awesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -15,15 +15,15 @@
 
     <main>
 
-        <!-- creating a modal for when quiz ends -->
+        <!-- creating a modal for when test ends -->
         <div class="modal-container" id="score-modal">
           
             <div class="modal-content-container">
               
-                <h1>Congratulations, Quiz Completed.</h1>
+                <h1>Congratulations <span id="data"></span>, Test Completed.</h1>
               
                 <div class="grade-details">
-                    <p>Attempts : 10</p>
+                    <p>Attempts : 20</p>
                     <p>Wrong Answers : <span id="wrong-answers"></span></p>
                     <p>Right Answers : <span id="right-answers"></span></p>
                     <p>Grade : <span id="grade-percentage"></span>%</p>
@@ -32,7 +32,7 @@
               
                 <div class="modal-button-container">
                     <button onclick="closeScoreModal()">Continue</button>
-                    <button onclick="">Finish</button>
+                    <button onclick="window.location.href='index.html'">Finish</button>
                 </div>
             </div>
         </div>
@@ -40,12 +40,13 @@
         <div class="test-container">
           
             <div class="test-details-container">
-                <h1>Score : <span id="player-score"></span> / 10</h1>
-                <h1> Question : <span id="question-number"></span> / 10</h1>
+                <h1>Score : <span id="player-score"></span> / 20</h1>
+                <h1> Question : <span id="question-number"></span> / 20</h1>
             </div>
 
             <div class="test-question-container">
                 <h1 id="display-question"></h1>
+                <div id="audio-container"></div>
             </div>
 
             <div class="test-options-container">
@@ -87,8 +88,8 @@
 
         </div>
     </main>
+
+    <!--custom js file link-->
     <script src="script/script.js"></script>
-</body>
-    
 </body>
 </html>

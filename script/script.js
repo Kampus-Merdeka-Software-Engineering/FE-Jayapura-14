@@ -1,5 +1,105 @@
 const questions = [
     {
+        question: "",
+        audioSrc: "assets/audio/1.MP3",
+        optionA: "He's feeling better.",
+        optionB: "The film wasn't very good.",
+        optionC: "He didn't enjoy the talk very much.",
+        optionD: "He will see the woman later.",
+        correctOption: "optionB",
+    },
+    
+    {
+        question: "",
+        audioSrc: "assets/audio/2.MP3",
+        optionA: "It cost more than he though it would.",
+        optionB: "He would like to sell it.",
+        optionC: "It isn't a very good one.",
+        optionD: "He got it for a good price.",
+        correctOption: "optionD",
+    },
+    
+    {
+        question: "",
+        audioSrc: "assets/audio/3.MP3",
+        optionA: "She felt different last week.",
+        optionB: "Someone cut her hair for her.",
+        optionC: "She hasn't been the same all week.",
+        optionD: "She cut her own hair.",
+        correctOption: "optionB",
+    },
+    
+    {
+        question: "",
+        audioSrc: "assets/audio/4.MP3",
+        optionA: "He'll bring the food quickly.",
+        optionB: "He needs to write down the woman's order.",
+        optionC: "He'll send a waiter to the woman's table.",
+        optionD: "He'll take the food away now.'",
+        correctOption: "optionA",
+    },
+    
+    {
+        question: "",
+        audioSrc: "assets/audio/5.MP3",
+        optionA: "She'll work part-time at the banguet.",
+        optionB: "She'll try to find a blanket for her guest.",
+        optionC: "She's still looking for a guest speaker.",
+        optionD: "She lives too far away to come to teh dinner.",
+        correctOption: "optionC",
+    },
+    
+    {
+        question: "",
+        audioSrc: "assets/audio/6.MP3",
+        optionA: "Who is waiting to see her.",
+        optionB: "How many people can hear her.",
+        optionC: "When she can see someone.",
+        optionD: "What the man said.",
+        correctOption: "optionD",
+    },
+    
+    {
+        question: "",
+        audioSrc: "assets/audio/7.MP3",
+        optionA: "Give the woman instructions about the phone.",
+        optionB: "Read the instructions next to the phone.",
+        optionC: "Pay for his telephone.",
+        optionD: "Call the woman on the phone.",
+        correctOption: "optionB",
+    },
+    
+    {
+        question: "",
+        audioSrc: "assets/audio/8.MP3",
+        optionA: "The scholar will arrive shortly.",
+        optionB: "They didn't get as much money as they needed.",
+        optionC: "They collected two hundred dollars.",
+        optionD: "He doesn't know how to do the calculation.",
+        correctOption: "optionB",
+    },
+    
+    {
+        question: "",
+        audioSrc: "assets/audio/9.MP3",
+        optionA: "He doesn't like to walk late at night.",
+        optionB: "He has two jobs.",
+        optionC: "He can't go to the game.",
+        optionD: "He'll come to the game late.",
+        correctOption: "optionC",
+    },
+    
+    {
+        question: "",
+        audioSrc: "assets/audio/10.MP3",
+        optionA: "Tony put it together.",
+        optionB: "He is going to pick it up now.",
+        optionC: "He will bring it to the picnic.",
+        optionD: "Tony got it for them.",
+        correctOption: "optionD",
+    },
+
+    {
         question: "Mike is the only one of those students who _________ passed the exam.",
         optionA: "have",
         optionB: "has",
@@ -140,7 +240,7 @@ let shuffledQuestions = [] //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
     //function to shuffle and push 10 questions to shuffledQuestions array
-    while (shuffledQuestions.length <= 9) {
+    while (shuffledQuestions.length <= 19) {
         const random = questions[Math.floor(Math.random() * questions.length)]
         if (!shuffledQuestions.includes(random)) {
             shuffledQuestions.push(random)
@@ -160,6 +260,19 @@ function NextQuestion(index) {
     document.getElementById("question-number").innerHTML = questionNumber
     document.getElementById("player-score").innerHTML = playerScore
     document.getElementById("display-question").innerHTML = currentQuestion.question;
+
+    // Hapus semua elemen audio yang mungkin ada dari pertanyaan sebelumnya
+    const audioContainer = document.getElementById("audio-container");
+    audioContainer.innerHTML = "";
+
+    // Tambahkan kode untuk menampilkan audio jika ada
+    if (currentQuestion.audioSrc) {
+        const audioElement = document.createElement("audio");
+        audioElement.controls = true;
+        audioElement.src = currentQuestion.audioSrc;
+        audioContainer.appendChild(audioElement);
+    }
+
     document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
@@ -181,8 +294,13 @@ function checkForAnswer() {
     })
    
     //checking to make sure a radio input has been checked or an option being chosen
-    if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
-        document.getElementById('option-modal').style.display = "flex"
+    if (
+        options[0].checked === false &&
+        options[1].checked === false &&
+        options[2].checked === false &&
+        options[3].checked == false
+    ) {
+        document.getElementById("option-modal").style.display = "flex";
     }
 
     //checking if checked radio button is same as answer
@@ -217,7 +335,7 @@ function handleNextQuestion() {
     unCheckRadioButtons()
     //delays next question displaying for a second
     setTimeout(() => {
-        if (indexNumber <= 9) {
+        if (indexNumber <= 19) {
             NextQuestion(indexNumber)
         }
         else {
@@ -249,19 +367,19 @@ function handleEndGame() {
     let remarkColor = null
 
     // condition check for player remark and remark color
-    if (playerScore <= 3) {
+    if (playerScore <= 10) {
         remark = "Bad Grades, Keep Practicing."
         remarkColor = "red"
     }
-    else if (playerScore >= 4 && playerScore < 7) {
+    else if (playerScore >= 11 && playerScore < 15) {
         remark = "Average Grades, You can do better."
         remarkColor = "orange"
     }
-    else if (playerScore >= 7) {
+    else if (playerScore >= 15) {
         remark = "Excellent, Keep the good work going."
         remarkColor = "green"
     }
-    const playerGrade = (playerScore / 10) * 100
+    const playerGrade = (playerScore / 20) * 100
 
     //data to display to score board
     document.getElementById('remarks').innerHTML = remark
