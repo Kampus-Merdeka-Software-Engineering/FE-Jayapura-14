@@ -171,8 +171,16 @@ header .fa-bars:hover{
         justify-content: center;
     }
 
-    .simulation2{
-        background-size: 170%;
+    .simulation2 .group70{
+        visibility: hidden;
+    }
+
+    .simulation2 .group72{
+        visibility: hidden;
+    }
+
+    .simulation2 .rectangle10{
+        visibility: hidden;
     }
 
     .about .content{
@@ -190,8 +198,16 @@ header .fa-bars:hover{
         font-size: 3rem;
     }
 
-    .simulation2{
-        background-size: 200%;
+    .simulation2 .group70{
+        visibility: hidden;
+    }
+
+    .simulation2 .group72{
+        visibility: hidden;
+    }
+
+    .simulation2 .rectangle10{
+        visibility: hidden;
     }
 
     .about .content .role-details{
@@ -230,9 +246,8 @@ header .fa-bars:hover{
 }
 
 /* css simulation section */
-.simulation div{
+.simulation{
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
     min-height: 40vh;
@@ -290,11 +305,7 @@ header .fa-bars:hover{
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    min-height: 40vh;
-    background: url(../assets/img/Rectangle\ 10.png) no-repeat;
-    background-size: 100%;
-    background-position: bottom;
-    
+    min-height: 40vh;   
 }
 
 .simulation2 img{
@@ -302,17 +313,36 @@ header .fa-bars:hover{
     z-index: 10;
 }
 
-.simulation2 .content{
-    margin: 6rem 0;
+.simulation2 .content h5{
+    margin: 10rem 0 0;
     max-width: 50rem;
+    font-size: 3.5rem;
+}
+
+.simulation2 .rectangle10{
+    position: absolute;
+    margin-top: 12.5rem;
+    right: 0;
+    width: 1300px;
+    height: 290px;
+    z-index: -1;
 }
 
 .simulation2 .group70{
     position: absolute;
-    margin-top: 40rem;
+    margin: 0 0 20rem;
     right: 0;
     width: 286px;
     height: 190px;
+    z-index: 5;
+}
+
+.simulation2 .group72{
+    position: absolute;
+    margin-top: 27rem;
+    left: 0;
+    width: 150px;
+    height: 150px;
     z-index: 5;
 }
 

@@ -47,25 +47,29 @@
         <!--start form-->
         <div class="container">
             <div class="title">Formulir Identitas</div>
-            <form action="#">
+            <form action="#" method="post">
                 <div class="user-details">
+                    <!-- <div class="input-box">
+                        <label for="fname"><span class="details">Nama Depan</span></label>
+                        <input id="fname" type="text" placeholder="Masukkan Nama Anda" required>
+                    </div> -->
                     <div class="input-box">
-                        <span class="details">Nama Lengkap</span>
-                        <input type="text" placeholder="Masukkan Nama Anda" required>
+                        <label for="name"><span class="details">Nama Lengkap</span></label>
+                        <input id="name" type="text" name="Nama Lengkap" placeholder="Masukkan Nama Anda" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Email</span>
-                        <input type="email" placeholder="Masukkan Email Anda" required>
+                        <label for="email"><span class="details">Email</span></label>
+                        <input id="email" type="email" name="Email" placeholder="Masukkan Email Anda" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">No Telepon</span>
-                        <input type="number" placeholder="+62-812xxxxxxxx" required>
+                        <label for="phone"><span class="details">No Telepon</span></label>
+                        <input id="phone" type="tel" name="No Telepon" placeholder="08xx-xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
                     </div>
                 </div>
                 <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-1">
-                    <input type="radio" name="gender" id="dot-2">
-                    <input type="radio" name="gender" id="dot-3">
+                    <input type="radio" name="gender" id="dot-1" value="Pria">
+                    <input type="radio" name="gender" id="dot-2" value="Wanita">
+                    <input type="radio" name="gender" id="dot-3" value="-">
                     <span class="gender-title">Gender</span>
                     <div class="category">
                         
@@ -87,7 +91,7 @@
                 </div>
                 
                 <div class="button">
-                    <input type="submit" value="Mulai Test">
+                    <input type="submit" value="Mulai Test" >
                 </div>
             </form>
         </div>
@@ -95,6 +99,9 @@
         
     </section>
     <!--start section ends-->
+
+    <!--custom js file link-->
+    <script src="script/start.js"></script>
 </body>
 <footer>
     <p>&copy; 2023 ToeflLAB | Group 14 - Team Greenland - Section Jayapura</p>
