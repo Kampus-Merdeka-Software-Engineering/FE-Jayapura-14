@@ -60,145 +60,145 @@ const questions = [
         correctOption: "optionC",
     },
     
-    // {
-    //     question: "",
-    //     audioSrc: "assets/audio/6.MP3",
-    //     optionA: "Who is waiting to see her.",
-    //     optionB: "How many people can hear her.",
-    //     optionC: "When she can see someone.",
-    //     optionD: "What the man said.",
-    //     correctOption: "optionD",
-    // },
+    {
+        question: "",
+        audioSrc: "assets/audio/6.MP3",
+        optionA: "Who is waiting to see her.",
+        optionB: "How many people can hear her.",
+        optionC: "When she can see someone.",
+        optionD: "What the man said.",
+        correctOption: "optionD",
+    },
     
-    // {
-    //     question: "",
-    //     audioSrc: "assets/audio/7.MP3",
-    //     optionA: "Give the woman instructions about the phone.",
-    //     optionB: "Read the instructions next to the phone.",
-    //     optionC: "Pay for his telephone.",
-    //     optionD: "Call the woman on the phone.",
-    //     correctOption: "optionB",
-    // },
+    {
+        question: "",
+        audioSrc: "assets/audio/7.MP3",
+        optionA: "Give the woman instructions about the phone.",
+        optionB: "Read the instructions next to the phone.",
+        optionC: "Pay for his telephone.",
+        optionD: "Call the woman on the phone.",
+        correctOption: "optionB",
+    },
     
-    // {
-    //     question: "",
-    //     audioSrc: "assets/audio/8.MP3",
-    //     optionA: "The scholar will arrive shortly.",
-    //     optionB: "They didn't get as much money as they needed.",
-    //     optionC: "They collected two hundred dollars.",
-    //     optionD: "He doesn't know how to do the calculation.",
-    //     correctOption: "optionB",
-    // },
+    {
+        question: "",
+        audioSrc: "assets/audio/8.MP3",
+        optionA: "The scholar will arrive shortly.",
+        optionB: "They didn't get as much money as they needed.",
+        optionC: "They collected two hundred dollars.",
+        optionD: "He doesn't know how to do the calculation.",
+        correctOption: "optionB",
+    },
     
-    // {
-    //     question: "",
-    //     audioSrc: "assets/audio/9.MP3",
-    //     optionA: "He doesn't like to walk late at night.",
-    //     optionB: "He has two jobs.",
-    //     optionC: "He can't go to the game.",
-    //     optionD: "He'll come to the game late.",
-    //     correctOption: "optionC",
-    // },
+    {
+        question: "",
+        audioSrc: "assets/audio/9.MP3",
+        optionA: "He doesn't like to walk late at night.",
+        optionB: "He has two jobs.",
+        optionC: "He can't go to the game.",
+        optionD: "He'll come to the game late.",
+        correctOption: "optionC",
+    },
     
-    // {
-    //     question: "",
-    //     audioSrc: "assets/audio/10.MP3",
-    //     optionA: "Tony put it together.",
-    //     optionB: "He is going to pick it up now.",
-    //     optionC: "He will bring it to the picnic.",
-    //     optionD: "Tony got it for them.",
-    //     correctOption: "optionD",
-    // },
+    {
+        question: "",
+        audioSrc: "assets/audio/10.MP3",
+        optionA: "Tony put it together.",
+        optionB: "He is going to pick it up now.",
+        optionC: "He will bring it to the picnic.",
+        optionD: "Tony got it for them.",
+        correctOption: "optionD",
+    },
 
-    // {
-    //     question: "Mike is the only one of those students who _________ passed the exam.",
-    //     optionA: "have",
-    //     optionB: "has",
-    //     optionC: "are",
-    //     optionD: "is",
-    //     correctOption: "optionB"
-    // },
+    {
+        question: "Mike is the only one of those students who _________ passed the exam.",
+        optionA: "have",
+        optionB: "has",
+        optionC: "are",
+        optionD: "is",
+        correctOption: "optionB"
+    },
 
-    // {
-    //     question: "John, along with his friends, ________ going to the party.",
-    //     optionA: "are",
-    //     optionB: "is",
-    //     optionC: "have",
-    //     optionD: "has",
-    //     correctOption: "optionB"
-    // },
+    {
+        question: "John, along with his friends, ________ going to the party.",
+        optionA: "are",
+        optionB: "is",
+        optionC: "have",
+        optionD: "has",
+        correctOption: "optionB"
+    },
 
-    // {
-    //     question: "She _________ a letter when I came.",
-    //     optionA: "wrote",
-    //     optionB: "was writing",
-    //     optionC: "has written",
-    //     optionD: "writes",
-    //     correctOption: "optionB"
-    // },
+    {
+        question: "She _________ a letter when I came.",
+        optionA: "wrote",
+        optionB: "was writing",
+        optionC: "has written",
+        optionD: "writes",
+        correctOption: "optionB"
+    },
 
-    // {
-    //     question: "If it _________, we will stay at home.",
-    //     optionA: "rains",
-    //     optionB: "will rain",
-    //     optionC: "rained",
-    //     optionD: "rain",
-    //     correctOption: "optionA"
-    // },
+    {
+        question: "If it _________, we will stay at home.",
+        optionA: "rains",
+        optionB: "will rain",
+        optionC: "rained",
+        optionD: "rain",
+        correctOption: "optionA"
+    },
 
-    // {
-    //     question: "They _________ TV when the phone rang.",
-    //     optionA: "watched",
-    //     optionB: "were watching",
-    //     optionC: "are watching",
-    //     optionD: "watch",
-    //     correctOption: "optionB"
-    // },
+    {
+        question: "They _________ TV when the phone rang.",
+        optionA: "watched",
+        optionB: "were watching",
+        optionC: "are watching",
+        optionD: "watch",
+        correctOption: "optionB"
+    },
 
-    // {
-    //     question: "Despite of _________, he managed to finish his homework on time.",
-    //     optionA: "tired",
-    //     optionB: "tiredness",
-    //     optionC: "tiring",
-    //     optionD: "to tire",
-    //     correctOption: "optionB"
-    // },
+    {
+        question: "Despite of _________, he managed to finish his homework on time.",
+        optionA: "tired",
+        optionB: "tiredness",
+        optionC: "tiring",
+        optionD: "to tire",
+        correctOption: "optionB"
+    },
 
-    // {
-    //     question: "_________, she could not answer the question?",
-    //     optionA: "As much as she tried",
-    //     optionB: "As she much tried",
-    //     optionC: "As tried she much",
-    //     optionD: "As much tried she",
-    //     correctOption: "optionA"
-    // },
+    {
+        question: "_________, she could not answer the question?",
+        optionA: "As much as she tried",
+        optionB: "As she much tried",
+        optionC: "As tried she much",
+        optionD: "As much tried she",
+        correctOption: "optionA"
+    },
 
-    // {
-    //     question: "The pie, _________ was very delicious, was made by Grandma.",
-    //     optionA: "which",
-    //     optionB: "who",
-    //     optionC: "where",
-    //     optionD: "whose",
-    //     correctOption: "optionA"
-    // },
+    {
+        question: "The pie, _________ was very delicious, was made by Grandma.",
+        optionA: "which",
+        optionB: "who",
+        optionC: "where",
+        optionD: "whose",
+        correctOption: "optionA"
+    },
 
-    // {
-    //     question: "The book _________ Mary was reading is very interesting.",
-    //     optionA: "who",
-    //     optionB: "whom",
-    //     optionC: "where",
-    //     optionD: "that",
-    //     correctOption: "optionD"
-    // },
+    {
+        question: "The book _________ Mary was reading is very interesting.",
+        optionA: "who",
+        optionB: "whom",
+        optionC: "where",
+        optionD: "that",
+        correctOption: "optionD"
+    },
 
-    // {
-    //     question: "The man _________ lives next door is very friendly.",
-    //     optionA: "who",
-    //     optionB: "which",
-    //     optionC: "where",
-    //     optionD: "whom",
-    //     correctOption: "optionA"
-    // },
+    {
+        question: "The man _________ lives next door is very friendly.",
+        optionA: "who",
+        optionB: "which",
+        optionC: "where",
+        optionD: "whom",
+        correctOption: "optionA"
+    },
 
     {
         question: "I wish you would tell me_____",
@@ -377,10 +377,10 @@ function handleEndGame() {
     let remark = null
     let remarkColor = null
 
-    const ls = localStorage.getItem("user")
-    const data = JSON.parse(ls)
+    // const ls = localStorage.getItem("user")
+    // const data = JSON.parse(ls)
     
-    let nama = data.nama_lengkap
+    // let nama = data.nama_lengkap
 
     // condition check for player remark and remark color
     if (playerScore <= 2) {
@@ -398,13 +398,21 @@ function handleEndGame() {
     const playerGrade = (playerScore * 20)
 
     //data to display to score board
-    document.getElementById('nama').innerHTML = nama
+    // document.getElementById('nama').innerHTML = nama
     document.getElementById('remarks').innerHTML = remark
     document.getElementById('remarks').style.color = remarkColor
     document.getElementById('grade-percentage').innerHTML = playerGrade
     document.getElementById('wrong-answers').innerHTML = wrongAttempt
     document.getElementById('right-answers').innerHTML = playerScore
     document.getElementById('score-modal').style.display = "flex"
+
+    // fetch('url')
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         const nama = document.getElementById('nama');
+    //         nama.textContent = data.nama_lengkap;
+    //     })
+    //     .catch(error => console.error('Error fetching data:', error));
 }
 
 //closes score modal and resets game
@@ -435,19 +443,19 @@ function finishTest() {
         final_score: grade-percentage
     }
 
-    fetch("url", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(dataTest)
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert("Terimakasih Sudah Mengerjakan")
-            window.location.href = "index.html"
-        }
-    })
-    .catch(error => console.error(error))
+    // fetch("url", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //             },
+    //             body: JSON.stringify(dataTest)
+    // })
+    // .then(response => response.json())
+    // .then(data => {
+    //     if (data.success) {
+    //         alert("Terimakasih Sudah Mengerjakan")
+    //         window.location.href = "index.html"
+    //     }
+    // })
+    // .catch(error => console.error(error))
 }

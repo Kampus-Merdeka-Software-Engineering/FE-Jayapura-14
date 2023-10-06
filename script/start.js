@@ -8,12 +8,6 @@ function handleSubmit(e) {
     const obj = Object.fromEntries(fd)
     console.log(obj)
 
-    const json = JSON.stringify(obj)
-    localStorage.setItem('user', json)
-
-    document.querySelector('form').reset()
-    window.location.href = "test.html" 
-
     // fetch("url", { //url halaman start
     //     method: "POST",
     //     headers: {
