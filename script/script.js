@@ -377,10 +377,10 @@ function handleEndGame() {
     let remark = null
     let remarkColor = null
 
-    // const ls = localStorage.getItem("user")
-    // const data = JSON.parse(ls)
+    const ls = localStorage.getItem("user")
+    const data = JSON.parse(ls)
     
-    // let nama = data.nama_lengkap
+    let nama = data.nama_lengkap
 
     // condition check for player remark and remark color
     if (playerScore <= 2) {
@@ -398,7 +398,7 @@ function handleEndGame() {
     const playerGrade = (playerScore * 20)
 
     //data to display to score board
-    // document.getElementById('nama').innerHTML = nama
+    document.getElementById('nama').innerHTML = nama
     document.getElementById('remarks').innerHTML = remark
     document.getElementById('remarks').style.color = remarkColor
     document.getElementById('grade-percentage').innerHTML = playerGrade
@@ -432,16 +432,16 @@ function closeOptionModal() {
 }
 
 //function to finish test
-function finishTest() {
-    const ls = localStorage.getItem("user")
-    const data = JSON.parse(ls)
-    const user_id = data.id
-    const final_score = document.getElementById('grade-percentage')
+// function finishTest() {
+//     const ls = localStorage.getItem("user")
+//     const data = JSON.parse(ls)
+//     const user_id = data.id
+//     const final_score = document.getElementById('grade-percentage')
 
-    const dataTest = {
-        user_id: data.id,
-        final_score: grade-percentage
-    }
+//     const dataTest = {
+//         user_id: data.id,
+//         final_score: grade-percentage
+//     }
 
     // fetch("url", {
     //             method: "POST",
@@ -458,4 +458,4 @@ function finishTest() {
     //     }
     // })
     // .catch(error => console.error(error))
-}
+// }
