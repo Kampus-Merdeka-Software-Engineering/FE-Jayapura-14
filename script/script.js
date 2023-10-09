@@ -1,12 +1,13 @@
+//Checking user data
 (function () {
     const ls = localStorage.getItem("Forms")
     if (ls === null) {
-        if (confirm ("Anda belum mengisi formulir identitas!")) {
-            window.location.href = "start.html" // hal start
-        }
+        alert ("Anda belum mengisi formulir identitas!")
+        window.location.replace("start.html")
     }
 })()
 
+//Questions
 const questions = [
     {
         question: "",
@@ -270,11 +271,11 @@ function NextQuestion(index) {
     document.getElementById("player-score").innerHTML = playerScore
     document.getElementById("display-question").innerHTML = currentQuestion.question;
 
-    // Hapus semua elemen audio yang mungkin ada dari pertanyaan sebelumnya
+    // remove any possible audio elements from the previous question
     const audioContainer = document.getElementById("audio-container");
     audioContainer.innerHTML = "";
 
-    // Tambahkan kode untuk menampilkan audio jika ada
+    // add code to display audio if present
     if (currentQuestion.audioSrc) {
         const audioElement = document.createElement("audio");
         audioElement.controls = true;
@@ -423,5 +424,8 @@ function closeOptionModal() {
 
 //function to finish test
 function finishTest() {
-    window.location.href = "index.html"
+    if(confirm("Selesai")){
+        window.location.replace("index.html")
+    }
+    
 }

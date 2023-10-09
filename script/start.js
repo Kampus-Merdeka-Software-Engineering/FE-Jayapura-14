@@ -2,6 +2,7 @@ const form = document.querySelector('form')
 
 form.addEventListener('submit', handleSubmit)
 
+//function to handle submit
 function handleSubmit(e) {
     e.preventDefault()
     const fd = new FormData(form)
@@ -11,7 +12,8 @@ function handleSubmit(e) {
     const json = JSON.stringify(obj)
     localStorage.setItem('Forms', json)
 
-    fetch("https://be-jayapura-14-production.up.railway.app/form", { //url api form
+    //fetch API form 
+    fetch("https://be-jayapura-14-production.up.railway.app/form", {
         method: "POST",
         headers: {
             'Content-Type' : "application/json",
@@ -23,10 +25,9 @@ function handleSubmit(e) {
         if (data.success) {
             alert("Terimakasih, Selamat Mengerjakan 🙌")
             form.reset()
+            window.location.replace("test.html")
         }
     })
     .catch(error => console.error(error))
-
-    window.location.href = "test.html"
 }
 
