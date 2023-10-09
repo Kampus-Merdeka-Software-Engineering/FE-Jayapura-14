@@ -1,6 +1,6 @@
 // Fetch data untuk step
 function fetchStepData() {
-    fetch('be-jayapura-14-production.up.railway.app/step')//ganti url api 
+    fetch('https://be-jayapura-14-production.up.railway.app/step')// url api 
         .then(response => response.json())
         .then(data => {
             const step = document.querySelector('section .step-details');

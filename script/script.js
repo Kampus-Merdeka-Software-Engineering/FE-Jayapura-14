@@ -1,13 +1,11 @@
-// // (function () {
-//     const ls = localStorage.getItem("user")
-//     if (ls === null) {
-//         if (alert ("Anda belum mengisi formulir identitas!")) {
-//             window.location.href("/start.html") // hal start
-//         }
-//     }
-//     const data = JSON.parse(ls)
-//     console.log(data.nama)
-// // })()
+(function () {
+    const ls = localStorage.getItem("Forms")
+    if (ls === null) {
+        if (confirm ("Anda belum mengisi formulir identitas!")) {
+            window.location.href = "start.html" // hal start
+        }
+    }
+})()
 
 const questions = [
     {
@@ -377,7 +375,7 @@ function handleEndGame() {
     let remark = null
     let remarkColor = null
 
-    const ls = localStorage.getItem("user")
+    const ls = localStorage.getItem("Forms")
     const data = JSON.parse(ls)
     
     let nama = data.nama_lengkap
@@ -405,14 +403,6 @@ function handleEndGame() {
     document.getElementById('wrong-answers').innerHTML = wrongAttempt
     document.getElementById('right-answers').innerHTML = playerScore
     document.getElementById('score-modal').style.display = "flex"
-
-    // fetch('url')
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         const nama = document.getElementById('nama');
-    //         nama.textContent = data.nama_lengkap;
-    //     })
-    //     .catch(error => console.error('Error fetching data:', error));
 }
 
 //closes score modal and resets game
@@ -432,30 +422,6 @@ function closeOptionModal() {
 }
 
 //function to finish test
-// function finishTest() {
-//     const ls = localStorage.getItem("user")
-//     const data = JSON.parse(ls)
-//     const user_id = data.id
-//     const final_score = document.getElementById('grade-percentage')
-
-//     const dataTest = {
-//         user_id: data.id,
-//         final_score: grade-percentage
-//     }
-
-    // fetch("url", {
-    //             method: "POST",
-    //             headers: {
-    //                 "Content-Type": "application/json",
-    //             },
-    //             body: JSON.stringify(dataTest)
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //     if (data.success) {
-    //         alert("Terimakasih Sudah Mengerjakan")
-    //         window.location.href = "index.html"
-    //     }
-    // })
-    // .catch(error => console.error(error))
-// }
+function finishTest() {
+    window.location.href = "index.html"
+}
