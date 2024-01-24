@@ -12,22 +12,22 @@ function handleSubmit(e) {
     const json = JSON.stringify(obj)
     localStorage.setItem('Forms', json)
 
-    //fetch API form 
-    fetch("https://be-jayapura-14-production.up.railway.app/form", {
-        method: "POST",
-        headers: {
-            'Content-Type' : "application/json",
-        },
-        body: JSON.stringify(obj),
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert("Terimakasih, Selamat Mengerjakan 🙌")
-            form.reset()
-            window.location.replace("test.html")
-        }
-    })
-    .catch(error => console.error(error))
+    // //fetch API form 
+    // fetch("https://be-jayapura-14-production.up.railway.app/form", {
+    //     method: "POST",
+    //     headers: {
+    //         'Content-Type' : "application/json",
+    //     },
+    //     body: JSON.stringify(obj),
+    // })
+    // .then(response => response.json())
+    // .then(data => {
+    //     if (data.success) {
+    //         alert("Terimakasih, Selamat Mengerjakan 🙌")
+    //         form.reset()
+    //         window.location.replace("test.html")
+    //     }
+    // })
+    // .catch(error => console.error(error))
 }
 
