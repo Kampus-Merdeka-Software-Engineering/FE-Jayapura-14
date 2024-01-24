@@ -11,6 +11,7 @@ function handleSubmit(e) {
 
     const json = JSON.stringify(obj)
     localStorage.setItem('Forms', json)
+    window.location("test.html")
 
     // //fetch API form 
     // fetch("https://be-jayapura-14-production.up.railway.app/form", {
